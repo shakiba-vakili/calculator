@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="header">
+    <div class="scheme">
+      <span>Dark Mode</span>
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+      <span>Light Mode</span>
+    </div>
+    <div class="text22">HTML and JavaScript codes are different in calculators.</div>
+    </div>
+    <div class="container">
+      <div class="item cont2">
+        <div class="calc2 shadow">
+          <input type="text" class="input" id="inputtext" placeholder="0" />
+          <button onclick="clear2('C')" class="but-calc2">C</button>
+          <button onclick="DEL2('DEL')" class="but-calc2">DEL</button>
+          <button onclick="calculate2('%')" class="but-calc2">%</button>
+          <button onclick="calculate2('/')" class="but-calc2">/</button>
+          <button onclick="calculate2(7)" class="but-calc2">7</button>
+          <button onclick="calculate2(8)" class="but-calc2">8</button>
+          <button onclick="calculate2(9)" class="but-calc2">9</button>
+          <button onclick="calculate2('*')" class="but-calc2">*</button>
+          <button onclick="calculate2(4)" class="but-calc2">4</button>
+          <button onclick="calculate2(5)" class="but-calc2">5</button>
+          <button onclick="calculate2(6)" class="but-calc2">6</button>
+          <button onclick="calculate2('-')" class="but-calc2">-</button>
+          <button onclick="calculate2(1)" class="but-calc2">1</button>
+          <button onclick="calculate2(2)" class="but-calc2">2</button>
+          <button onclick="calculate2(3)" class="but-calc2">3</button>
+          <button onclick="calculate2('+')" class="but-calc2">+</button>
+          <button onclick="calculate2('.')" class="but-calc2">.</button>
+          <button onclick="calculate2(0)" class="but-calc2">0</button>
+          <button onclick="Result2()" class="but-calc2 equal-calc2">=</button>
+        </div>
+      </div>
+      <!-- ********************** -->
+      <!-- ********************** -->
+      <!-- ********************** -->
+      <div class="item cont">
+        <div class="calc shadow">
+          <div class="display">0</div>
+          <div class="keypad">
+            <table class="keypad-table">
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="key all-clear">AC</div>
+                  </td>
+                  <td>
+                    <div class="key clear-last">C</div>
+                  </td>
+                  <td>
+                    <div class="key show-display">%</div>
+                  </td>
+                  <td>
+                    <div class="key show-display">/</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="key show-display">7</div>
+                  </td>
+                  <td>
+                    <div class="key show-display">8</div>
+                  </td>
+                  <td>
+                    <div class="key show-display">9</div>
+                  </td>
+                  <td>
+                    <div class="key show-display">*</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="key show-display">4</div>
+                  </td>
+                  <td>
+                    <div class="key show-display">5</div>
+                  </td>
+                  <td>
+                    <div class="key show-display">6</div>
+                  </td>
+                  <td>
+                    <div class="key show-display">-</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="key show-display">1</div>
+                  </td>
+                  <td>
+                    <div class="key show-display">2</div>
+                  </td>
+                  <td>
+                    <div class="key show-display">3</div>
+                  </td>
+                  <td>
+                    <div class="key show-display">+</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <div class="key show-display" style="width: 150px">0</div>
+                  </td>
+                  <td>
+                    <div class="key show-display">.</div>
+                  </td>
+                  <td>
+                    <div class="key calculate">=</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- ********************** -->
+      <!-- ********************** -->
+      <!-- ********************** -->
+
+      <div class="item cont3">
+        <div class="calc3 shadow">
+          <input
+            type="text"
+            placeholder="0"
+            id="displayResult"
+            name="displayResult"
+            readonly="readonly"
+            class="displayResult"
+          />
+          <button onclick="clear3('C')" class="but-calc3">C</button>
+          <button onclick="DEL3('DEL')" class="but-calc3">DEL</button>
+          <button onclick="calculate3('%')" class="but-calc3">%</button>
+          <button onclick="calculate3('/')" class="but-calc3">/</button>
+          <button onclick="calculate3(7)" class="but-calc3">7</button>
+          <button onclick="calculate3(8)" class="but-calc3">8</button>
+          <button onclick="calculate3(9)" class="but-calc3">9</button>
+          <button onclick="calculate3('*')" class="but-calc3">*</button>
+          <button onclick="calculate3(4)" class="but-calc3">4</button>
+          <button onclick="calculate3(5)" class="but-calc3">5</button>
+          <button onclick="calculate3(6)" class="but-calc3">6</button>
+          <button onclick="calculate3('-')" class="but-calc3">-</button>
+          <button onclick="calculate3(1)" class="but-calc3">1</button>
+          <button onclick="calculate3(2)" class="but-calc3">2</button>
+          <button onclick="calculate3(3)" class="but-calc3">3</button>
+          <button onclick="calculate3('+')" class="but-calc3">+</button>
+          <button onclick="calculate3('.')" class="dot but-calc3">.</button>
+          <button onclick="calculate3(0)" class="but-calc3">0</button>
+          <button onclick="Result3()" class="but-calc3 equal-calc3">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
